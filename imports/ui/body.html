@@ -1,0 +1,39 @@
+
+<template name="home">
+<body>
+  <ul>
+    <li><a href="/" class="active">home</a></li>
+    <li><a href="/about">about</a></li>
+  </ul>
+  <div class="container">
+    <header>
+      <h1>paw-sitivity</h1>
+      <h2> We wanted to build something that would help bring a little more positivity into the world! 
+      So use the form below to send a nice message to your friend, and they'll get an email from us letting them
+      know that someone's thinking about them!</h2>
+      <h3> Thanks for helping us spread joy and positive energy! </h3>
+      <a href = "/about" class="button"> learn more </a>
+
+    </header>
+
+    <form class="new-compliment">
+        <p> Enter your friend's email address: </p> <br>
+        <input type="text" name="email" /> <br>
+        <p> Enter a compliment to send: </p> <br>
+        <input type="text" name="compliment"/> <br>
+        <input type="submit" value="submit">
+    </form>
+   </div>
+
+   <footer>
+   Shawna Huang, Jack Loar, Amber Ogata, Huayu Ouyang<br>
+   hack@brown 2017 <br>
+   <img src="/logo.png" alt="paw-sivity logo" style="width:64px;height:64px">
+   </footer>
+  </body>
+</template>
+
+ 
+<template name="compliment">
+  <li>{{text}}</li>
+</template>
