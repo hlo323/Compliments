@@ -1,0 +1,25 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Compliments</h1>
+    </header>
+
+    <form class="new-compliment">
+        Enter a compliment to send:<br>
+        <input type="text" name="compliment"/> <br>
+        Enter the phone number to send the compliment to:<br>
+        <input type="text" name="phonenumber" />
+        <input type="submit" value="submit">
+    </form>
+ 
+    <ul>
+      {{#each compliments}}
+        {{> compliment}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+ 
+<template name="compliment">
+  <li>{{text}}</li>
+</template>
